@@ -62,22 +62,28 @@
           <li>c</li>
         </ul>
       </li>
-      <li>
-        Item 3
-      </li>
+      <li>Item 3</li>
     </ul>
 
     <hr />
 
-    <!-- image tag -->
-<!--     <img src="images/vaibhavKumar.png" alt="Profile Picture of Vaibhav Kumar" /> -->
-    <img src="vaibhavKumar.png" alt="Profile Picture of Vaibhav Kumar" />
+    <!-- image tag Local Image -->
+    <img src="images/vaibhavKumar.png" alt="Profile Picture of Vaibhav Kumar" />
+
+    <!-- image tag remote Image -->
+    <img
+      src="https://source.unsplash.com/400x225/?nature,water"
+      alt="Profile Picture of Vaibhav Kumar"
+    />
+
     <!-- links and anchor tags  -->
     <br />
     <hr />
     <a href="https://vaib5.com">My Personal Website</a>
     <br />
-    <a href="https://edupotential.com">My Portfolio Website</a>
+    <a href="https://edupotential.com" target="_blank">My Portfolio Website</a>
+    <br />
+    <a href="/contact-page.html">My contact-page</a>
     <br />
     <hr />
 
@@ -96,7 +102,7 @@
     <!-- Nested Tables -->
     <table>
       <tr>
-        <th>Serial Number</th>
+        <th>Sr.No</th>
         <th>HTML Elements</th>
       </tr>
       <tr>
@@ -170,8 +176,11 @@
     <br />
     <hr />
     <!-- html forms -->
+    <!-- form tag -->
     <form action=""></form>
+    <!-- Label Tag -->
     <label for="">Name</label>
+    <!-- input tag type text input -->
     <input type="text" />
     <br />
     <label for="">Surname</label>
@@ -182,9 +191,57 @@
     <br />
     <label for="">message</label>
     <br />
+    <!-- Text Area tag for filling some text like message NO fixed size -->
     <textarea name="" id="" cols="30" rows="5"></textarea>
     <br />
+    <label for="sex">Sex</label>
+    <!-- Select Tag -->
+    <select name="sex" id="sex">
+      <!-- Option Tag -->
+      <option value="male">Male</option>
+      <option value="Female" selected>Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br />
+    <label for="age">age</label>
+    <!-- Input tag for Number type -->
+    <input type="number" placeholder="24" />
+    <br />
+    <label for="birthdate">Birthdate</label>
+    <!-- Input tag for date type -->
+    <input type="date" name="birthdate" id="birthdate" />
+    <br />
+    <label for="memership">Membership</label>
+    <!-- Input tag for Radio Button -->
+    <input
+      type="radio"
+      name="membership"
+      id="membership"
+      value="simple"
+    />Simple
+    <input
+      type="radio"
+      name="membership"
+      id="membership"
+      value="standard"
+      checked
+    />Standard
+    <input type="radio" name="membership" id="membership" value="Super" />Super
+    <br />
+    <label for="check">Check Boxes</label>
+    <!-- input tag for Checkbox type -->
+    <input type="checkbox" name="Likes" id="Likes" value="Bike" />Bike
+    <input type="checkbox" name="Likes" id="Likes" value="Car" />Car
+    <input type="checkbox" name="Likes" id="Likes" value="Boat" checked/>Boat
+    <br />
+    <!-- input tag for button -->
+    <input type="submit" value="Submit" />
+    <br />
+    <!-- Using Submit button tag -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
     <hr />
+    <!-- To keep the page up when live server is on  -->
+    <div style="margin-top: 250px;"></div>
   </body>
-  <div style="margin-bottom: 250px;"></div>
 </html>
